@@ -5,7 +5,7 @@ public class principal {
     {
         Scanner sc = new Scanner(System.in);
         datos [][] m = new datos[2][2];
-        metod met = new metod();
+        metodos met = new metodos();
 
         System.out.println("BIENVENIDOS");
         while(true)
