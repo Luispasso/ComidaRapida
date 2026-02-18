@@ -1,21 +1,20 @@
 public class datos{
     private String TipoComida;
     private String Tamaño;
-    private String descripcion;
+    private int cantidad;
     private double precio;
-    private String servicio;
-
-    public datos(String tipoComida, String tamaño, String descripcion, double precio, String servicio) {
+    private int id;
+    private String Estado;
+    public datos(String tipoComida, String tamaño, int cantidad, double precio, int id, String estado) {
         TipoComida = tipoComida;
         Tamaño = tamaño;
-        this.descripcion = descripcion;
+        this.cantidad = cantidad;
         this.precio = precio;
-        this.servicio = servicio;
+        this.id = id;
+        Estado = estado;
     }
-
     public datos() {
     }
-    
     public String getTipoComida() {
         return TipoComida;
     }
@@ -28,11 +27,11 @@ public class datos{
     public void setTamaño(String tamaño) {
         Tamaño = tamaño;
     }
-    public String getDescripcion() {
-        return descripcion;
+    public int getCantidad() {
+        return cantidad;
     }
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
     }
     public double getPrecio() {
         return precio;
@@ -40,12 +39,18 @@ public class datos{
     public void setPrecio(double precio) {
         this.precio = precio;
     }
-    public String getServicio() {
-        return servicio;
+    public int getId() {
+        return id;
     }
-    public void setServicio(String servicio) {
-        this.servicio = servicio;
+    public void setId(int id) {
+        this.id = id;
     }
-
+    public String getEstado() {
+        return Estado;
+    }
+    public void setEstado(String estado) {
+        Estado = estado;
+    }
+    
     
 }

@@ -5,7 +5,7 @@ public class principal {
     {
         Scanner sc = new Scanner(System.in);
         datos [][] m = new datos[2][2];
-        metodos met = new metodos();
+        metod met = new metod();
 
         System.out.println("BIENVENIDOS");
         while(true)
@@ -23,13 +23,14 @@ public class principal {
                     m = met.ingreseP(m);
                     break;
                 case 2:
-                    System.out.println("Disponible pronto");
+                    met.Buscar(m, opcion);
                     break;
                 case 3:
-                    System.out.println("Disponible pronto");
+                    met.Buscar(m, opcion);
+
                     break;
                 case 4:
-                    System.out.println("Disponible pronto");
+                    met.Buscar(m, opcion);
                     break;
                 default:
                     break;
